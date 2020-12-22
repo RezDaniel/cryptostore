@@ -12,15 +12,17 @@ redis:
 exchanges:
     BITMEX:
         l2_book:
-            symbols: [XBTUSD]
+            symbols: [XBTUSD, XBTZ20, XBTH21, XBTM21]
             max_depth: 10
-        trades: [XBTUSD]
+        trades: [XBTUSD, XBTZ20, XBTH21, XBTM21]
+        ticker: [XBTUSD, XBTZ20, XBTH21, XBTM21]
+        funding: [XBTUSD, XBTZ20, XBTH21, XBTM21]
     COINBASE:
         l3_book:
-            symbols: [BTC-USD, ETH-USD]
+            symbols: [BTC-USD]
             book_delta: true
             book_interval: 10000
-        trades: [BTC-USD, ETH-USD, ETH-BTC]
+        trades: [BTC-USD]
 
 storage: [arctic]
 arctic: mongodb://mongo:27017
