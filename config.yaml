@@ -51,15 +51,15 @@ exchanges:
             trades: 120
             ticker: 120
             funding: -1
-        retries: -1
+        retries: 10  # Was set to -1
         l2_book:
-            symbols: [XBTUSD]
+            symbols: [XBTUSD, XBTZ20, XBTH21, XBTM21]
             max_depth: 10
             book_delta: true
             book_interval: 100000
-        trades: [XBTUSD]
-        ticker: [XBTUSD]
-        funding: [XBTUSD]
+        trades: [XBTUSD, XBTZ20, XBTH21, XBTM21]
+        ticker: [XBTUSD, XBTZ20, XBTH21, XBTM21]
+        funding: [XBTUSD, ETHUSD]
     COINBASE:
         retries: -1
         l3_book:

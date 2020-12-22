@@ -12,7 +12,7 @@ from sortedcontainers import SortedDict as sd
 
 
 def main():
-    a = arctic.Arctic('localhost:37017')
+    a = arctic.Arctic('127.0.0.1')
     lib = a['BITMEX']
     it = lib.iterator('l2_book-XBTUSD')
 
