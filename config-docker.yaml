@@ -12,11 +12,13 @@ redis:
 exchanges:
     BITMEX:
         l2_book:
-            symbols: [XBTUSD, XBTZ20, XBTH21, XBTM21]
-            max_depth: 10
-        trades: [XBTUSD, XBTZ20, XBTH21, XBTM21]
-        ticker: [XBTUSD, XBTZ20, XBTH21, XBTM21]
-        funding: [XBTUSD, XBTZ20, XBTH21, XBTM21]
+            symbols: [XBTUSD, XBTZ20, XBTH21, XBTM21, ETHUSD, ETHUSDH21]
+            book_depth: 10
+            book_delta: true
+            book_interval: 100000
+        trades: [XBTUSD, XBTZ20, XBTH21, XBTM21, ETHUSD, ETHUSDH21]
+        ticker: [XBTUSD, XBTZ20, XBTH21, XBTM21, ETHUSD, ETHUSDH21]
+        funding: [XBTUSD, ETHUSD]
     COINBASE:
         l3_book:
             symbols: [BTC-USD]

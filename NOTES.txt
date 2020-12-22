@@ -2,9 +2,9 @@ Connect to Redis by using the following commands:
 
 bash$> python
 >>> from arctic import CHUNK_STORE, Arctic
->>> store = Arctic('localhost:37017')
->>> store.list_libraries()
->>> lib = store[BITMEX]
+>>> a = Arctic('localhost:37017')
+>>> a.list_libraries()
+>>> lib = store['BITMEX']
 >>> lib.list_symbols()
 
 
