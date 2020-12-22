@@ -18,3 +18,16 @@ volumes:
   - ./logs:/var/log/mongodb/
   - ./db:/var/lib/mongodb
 command: mongod --config /etc/mongod.conf
+
+Docker
+    BitMEX API (All data feeds)
+    Cryptofeed
+    Redis
+    Cryptostore
+    Arctic
+    MongoDB
+
+Python Script Template: to pull Arctic (mongoDB) data
+
+Cloud based Jupyter server (Python script to run from here)
+
