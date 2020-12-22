@@ -1,0 +1,20 @@
+Connect to Redis by using the following commands:
+
+bash$> python
+>>> from arctic import CHUNK_STORE, Arctic
+>>> store = Arctic('localhost:37017')
+>>> store.list_libraries()
+>>> lib = store[BITMEX]
+>>> lib.list_symbols()
+
+
+Delete docker containers
+docker rm -f <name of container>
+docker rm -f cryptostore_mongo_1, cryptostore_cryptostore_1, cryptostore_redisdb_1
+
+added to docker-compose.yml
+volumes:
+  - ./mongod.conf:/etc/mongod.conf
+  - ./logs:/var/log/mongodb/
+  - ./db:/var/lib/mongodb
+command: mongod --config /etc/mongod.conf
