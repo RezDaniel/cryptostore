@@ -19,6 +19,7 @@ volumes:
   - ./db:/var/lib/mongodb
 command: mongod --config /etc/mongod.conf
 
+<<<<<<< HEAD
 
 
 
@@ -102,3 +103,17 @@ websockets==8.1
 yapic.json==1.6.0
 yarl==1.6.3
 zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1603668650351/work
+=======
+Docker
+    BitMEX API (All data feeds)
+    Cryptofeed
+    Redis
+    Cryptostore
+    Arctic
+    MongoDB
+
+Python Script Template: to pull Arctic (mongoDB) data
+
+Cloud based Jupyter server (Python script to run from here)
+
+>>>>>>> f9616c406a94fdd6325433be80a4dbe67837e502
